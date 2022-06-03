@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>filter</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js" ></script>
+</head>
+<body>
+   <div class="container">
+       <div class="imgcontainer">
+          <div class="img">
+              <img src="">
+              <canvas id="canvas"></canvas>
+          </div>
+          <div class="upload">
+              <label for="upload" class="uploade">upload</label>
+              <input type="file" id="upload">
+          </div>
+       </div>
+       <div class="filters">
+         <ul>
+             <li>
+                 <label for="saturate">saturate</label>
+                 <input id="saturate" type="range" min="0" max="200" value="100">
+             </li>
+             <li>
+                <label for="contrast">contrast</label>
+                <input id="contrast" type="range" min="0" max="200" value="100">
+            </li>
+            <li>
+                <label for="brightness">brightness</label>
+                <input id="brightness" type="range" min="0" max="200" value="100">
+            </li>
+            <li>
+                <label for="spia">sepia</label>
+                <input id="spia" type="range" min="0" max="200" value="0">
+            </li>
+            <li>
+                <label for="grayscale">grayscale</label>
+                <input id="grayscale" type="range" step="0.1" min="0" max="1" value="0">
+            </li>
+            <li>
+                <label for="blure">blure</label>
+                <input id="blure" type="range" step="0.1" min="0" max="10" value="0">
+            </li>
+            <li>
+                <label for="hue_rotate">hue_rotate</label>
+                <input id="hue_rotate" type="range" min="0" max="350" value="0">
+            </li>
+            <li>
+                <a download="ali" id="download"> download</a>
+                <span>reset</span>
+            </li>
+         </ul>
+       </div>
+   </div> 
+</body>
+</html>
